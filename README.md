@@ -46,7 +46,7 @@ A user authentication system with sign-up, login, and JWT-based user authenticat
 
 2. Navigate to the project folder and install dependencies:
 
-    cd user-authenticator-api
+    cd api
     npm install
 
 3. Create a .env file in the root of the backend folder and add the following variables:
@@ -60,7 +60,7 @@ A user authentication system with sign-up, login, and JWT-based user authenticat
 
 ### Frontend Setup
 
-1. cd user-authentication-app-ts
+1. cd frontend
 2. npm install
 3. npm start
 
