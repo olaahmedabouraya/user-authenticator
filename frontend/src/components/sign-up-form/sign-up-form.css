@@ -1,0 +1,166 @@
+/* Full screen background with stars */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #1e1e2f;
+  background-image: url('https://www.transparenttextures.com/patterns/stardust.png');
+  background-size: cover;
+  background-repeat: repeat;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Header above form */
+.signup-container {
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 100%;
+  max-width: 420px; /* same as .signup-form */
+}
+
+.signup-title {
+  color: white;
+}
+
+/* Form box */
+.signup-form {
+  background-color: #ffffff;
+  padding: 35px 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Each field section */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 4px;
+}
+
+label {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #333;
+  text-align: left;
+}
+
+/* Input + icon wrapper */
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.input-wrapper i {
+  position: absolute;
+  color: #888;
+  font-size: 14px;
+}
+
+/* Left-side icon (e.g. user, envelope, lock) */
+.input-wrapper i:first-child {
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Styled input */
+.signup-form input {
+  width: 100%;
+  padding: 10px 34px 10px 34px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+.signup-form input:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+/* Error state */
+.input-error {
+  border: 2px solid red !important;
+}
+
+.error {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 2px;
+  text-align: left;
+}
+
+/* Button */
+.signup-form button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.signup-form button:hover:not(:disabled) {
+  background-color: #45a049;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* Right-side eye icon */
+.input-wrapper .toggle-password {
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.signup-form-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* Footer with prompt */
+.form-footer {
+  text-align: center;
+}
+
+/* Styled "Sign In" link */
+.signin-prompt {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.signin-link {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #4CAF50;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.signin-link:hover {
+  color: #45a049;
+}

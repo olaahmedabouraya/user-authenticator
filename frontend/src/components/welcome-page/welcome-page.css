@@ -1,0 +1,73 @@
+/* Full screen background with stars */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #1e1e2f;
+  background-image: url('https://www.transparenttextures.com/patterns/stardust.png');
+  background-size: cover;
+  background-repeat: repeat;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Form box */
+.welcome-page {
+  background-color: #ffffff;
+  padding: 35px 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Styled input */
+.welcome-page input {
+  width: 100%;
+  padding: 10px 34px 10px 34px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+.welcome-page input:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+/* Button */
+.welcome-page button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.welcome-page button:hover:not(:disabled) {
+  background-color: #45a049;
+}
+
+.welcome-page-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.paragraph-style {
+  font-size: 1rem !important;
+  text-align: center !important;
+  margin-bottom: 20px !important;
+  color: #333 !important;
+}
